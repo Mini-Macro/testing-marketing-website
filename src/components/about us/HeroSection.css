@@ -1,0 +1,37 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.about-hero-container {
+  width: 100%;
+  background-color: #062d50;
+  box-sizing: border-box;
+  padding: 6rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.about-hero-title {
+  font-size: 2.1vw;
+  text-align: center;
+  font-weight: 500;
+}
+
+.about-hero-subtitle {
+  font-size: 2.4vw;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about-hero-title {
+    font-size: 14px;
+  }
+
+  .about-hero-subtitle {
+    font-size: 26px;
+  }
+}

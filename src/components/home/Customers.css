@@ -1,0 +1,99 @@
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.customer-parent {
+  padding: 6rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.parent-heading-container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parent-heading {
+  color: black;
+  text-align: center;
+  font-size: 2.12rem;
+  font-weight: 300;
+}
+
+.customer-heading-line {
+  width: 513px;
+  border: 2px #062d50 solid;
+}
+
+.customers-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.customer-container {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+.customer-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.customer-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.customer-description {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.read-more-btn {
+  background-color: #062d50;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .customers-container {
+    margin: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .customer-container {
+    width: 16rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .customer-name {
+    font-size: 18px;
+  }
+
+  .customer-description {
+    font-size: 14px;
+  }
+
+  .read-more-btn {
+    font-size: 12px;
+  }
+
+  .customer-heading-line {
+    width: 200px;
+  }
+}
