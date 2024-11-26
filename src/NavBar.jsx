@@ -14,7 +14,7 @@ const NavBar = () => {
   const handleClick = async () => {
     const API_URL =
       import.meta.env.VITE_API_URL ||
-      "https://phonepe-payment-server.onrender.com/order";
+      "https://phonepe-payment-server.onrender.com";
 
     try {
       const response = await fetch(`${API_URL}/order`, {
