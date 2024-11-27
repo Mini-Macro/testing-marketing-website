@@ -36,8 +36,10 @@ const NavBar = () => {
       const data = await response.json();
 
       if (data.success) {
-        // Redirect to PhonePe payment page
-        window.location.href = data.data.instrumentResponse.redirectInfo.url;
+        // Used PhonePe checkout bundle instead of direct redirect
+        window.PhonePeCheckout.transact({
+          tokenUrl: data.data.instrumentResponse.redirectInfo.url,
+        });
       } else {
         setError(data.message || "Payment initiation failed");
       }
